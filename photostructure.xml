@@ -5,7 +5,7 @@
   <Registry>https://hub.docker.com/r/photostructure/server/</Registry>
   <Network>bridge</Network>
   <MyIP/>
-  <Shell>bash</Shell>
+  <Shell>sh</Shell>
   <Privileged>false</Privileged>
   <Support>https://forum.photostructure.com/</Support>
   <Project>https://photostructure.com/</Project>
@@ -20,9 +20,11 @@
 &#xD;
 Be sure to visit the forum for tips, support, and to vote on what features you want to see next!&#xD;
 &#xD;
+To import additional directories or volumes, click "Add another Path", enter a Container path (like "/photos"), click Host Path, pick the directory you want to import, click "Add", then click "Apply". PhotoStructure will find the new directory automatically if you leave the "Where else are your photos and videos?" section set to "Automatic", which is the default.&#xD;
+&#xD;
 Initial template by Spants (thanks!)</Overview>
-  <Category>MediaApp:Photos</Category>
-  <WebUI>http://[IP]:[PS_HTTP_PORT:1787]</WebUI>
+  <Category>MediaApp:Photos, MediaServer:Video, MediaServer:Photos, Status:Stable</Category>
+  <WebUI>http://[IP]:[PORT:1787]</WebUI>
   <TemplateURL/>
   <Icon>https://photostructure.com/img/logo-circle-gradient-256.png</Icon>
   <ExtraParams>--stop-timeout=120</ExtraParams>
@@ -40,7 +42,11 @@ Initial template by Spants (thanks!)</Overview>
 - Robust metadata support, including Google Takeouts, XMP sidecars, and sibling inference&#xD;
 - Robust image and video deduplication&#xD;
 &#xD;
-Be sure to visit the forum for tips, support, and to vote on what features you want to see next!</Description>
+Be sure to visit the forum for tips, support, and to vote on what features you want to see next!&#xD;
+&#xD;
+To import additional directories or volumes, click "Add another Path", enter a Container path (like "/photos"), click Host Path, pick the directory you want to import, click "Add", then click "Apply". PhotoStructure will find the new directory automatically if you leave the "Where else are your photos and videos?" section set to "Automatic", which is the default.&#xD;
+&#xD;
+Initial template by Spants (thanks!)</Description>
   <Networking>
     <Mode>bridge</Mode>
     <Publish>
