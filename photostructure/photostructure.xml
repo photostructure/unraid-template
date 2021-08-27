@@ -20,7 +20,15 @@
 
 Be sure to visit the forum for tips, support, and to vote on what features you want to see next!
 
-To import additional directories or volumes, click "Add another Path", enter a Container path (like "/photos"), click Host Path, pick the directory you want to import, click "Add", then click "Apply". PhotoStructure will find the new directory automatically if you leave the "Where else are your photos and videos?" section set to "Automatic", which is the default.
+To import additional directories or volumes: 
+
+1. click "Add another Path"
+2. enter a Container path (like "/photos")
+3. click Host Path and pick the directory you want to import
+4. click "Add", then
+5. click "Apply".
+
+PhotoStructure will find the new directory automatically if you leave the "Where else are your photos and videos?" section set to "Automatic", which is the default.
 
 Initial template by Spants (thanks!)</Overview>
   <Category>MediaApp:Photos, MediaServer:Video, MediaServer:Photos, Status:Stable</Category>
@@ -44,7 +52,15 @@ Initial template by Spants (thanks!)</Overview>
 
 Be sure to visit the forum for tips, support, and to vote on what features you want to see next!
 
-To import additional directories or volumes, click "Add another Path", enter a Container path (like "/photos"), click Host Path, pick the directory you want to import, click "Add", then click "Apply". PhotoStructure will find the new directory automatically if you leave the "Where else are your photos and videos?" section set to "Automatic", which is the default.
+To import additional directories or volumes: 
+
+1. click "Add another Path"
+2. enter a Container path (like "/photos")
+3. click Host Path and pick the directory you want to import
+4. click "Add", then
+5. click "Apply".
+
+PhotoStructure will find the new directory automatically if you leave the "Where else are your photos and videos?" section set to "Automatic", which is the default.
 
 Initial template by Spants (thanks!)</Description>
   <Networking>
