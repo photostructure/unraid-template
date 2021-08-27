@@ -1,3 +1,7 @@
+<img alt="PhotoStructure" src="https://photostructure.com/img/logo-horizontal-black-on-white-800w.png" width=400>
+
+Welcome to your new home for all your photos and videos!
+
 This template sets up [PhotoStructure for
 Servers](https://photostructure.com/server/photostructure-for-servers/) using
 UnRAID's docker templating system.
