@@ -9,19 +9,19 @@
   <Privileged>false</Privileged>
   <Support>https://forum.photostructure.com/</Support>
   <Project>https://photostructure.com/</Project>
-  <Overview>PhotoStructure is your new home for all your photos and videos.&#xD;
-&#xD;
-- Cross-platform libraries that you can move seamlessly across Docker, Windows, macOS, and Linux&#xD;
-- Fast, fun mobile-friendly UI&#xD;
-- Support for very large (250k+) libraries&#xD;
-- Support for almost all RAW and video formats (thanks to LibRaw and FFmpeg)&#xD;
-- Robust metadata support, including Google Takeouts, XMP sidecars, and sibling inference&#xD;
-- Robust image and video deduplication&#xD;
-&#xD;
-Be sure to visit the forum for tips, support, and to vote on what features you want to see next!&#xD;
-&#xD;
-To import additional directories or volumes, click "Add another Path", enter a Container path (like "/photos"), click Host Path, pick the directory you want to import, click "Add", then click "Apply". PhotoStructure will find the new directory automatically if you leave the "Where else are your photos and videos?" section set to "Automatic", which is the default.&#xD;
-&#xD;
+  <Overview>PhotoStructure is your new home for all your photos and videos.
+
+- Cross-platform libraries that you can move seamlessly across Docker, Windows, macOS, and Linux
+- Fast, fun mobile-friendly UI
+- Support for very large (250k+) libraries
+- Support for almost all RAW and video formats (thanks to LibRaw and FFmpeg)
+- Robust metadata support, including Google Takeouts, XMP sidecars, and sibling inference
+- Robust image and video deduplication
+
+Be sure to visit the forum for tips, support, and to vote on what features you want to see next!
+
+To import additional directories or volumes, click "Add another Path", enter a Container path (like "/photos"), click Host Path, pick the directory you want to import, click "Add", then click "Apply". PhotoStructure will find the new directory automatically if you leave the "Where else are your photos and videos?" section set to "Automatic", which is the default.
+
 Initial template by Spants (thanks!)</Overview>
   <Category>MediaApp:Photos, MediaServer:Video, MediaServer:Photos, Status:Stable</Category>
   <WebUI>http://[IP]:[PORT:1787]</WebUI>
@@ -33,19 +33,19 @@ Initial template by Spants (thanks!)</Overview>
   <DateInstalled>1630043365</DateInstalled>
   <DonateText/>
   <DonateLink/>
-  <Description>PhotoStructure is your new home for all your photos and videos.&#xD;
-&#xD;
-- Cross-platform libraries that you can move seamlessly across Docker, Windows, macOS, and Linux&#xD;
-- Fast, fun mobile-friendly UI&#xD;
-- Support for very large (250k+) libraries&#xD;
-- Support for almost all RAW and video formats (thanks to LibRaw and FFmpeg)&#xD;
-- Robust metadata support, including Google Takeouts, XMP sidecars, and sibling inference&#xD;
-- Robust image and video deduplication&#xD;
-&#xD;
-Be sure to visit the forum for tips, support, and to vote on what features you want to see next!&#xD;
-&#xD;
-To import additional directories or volumes, click "Add another Path", enter a Container path (like "/photos"), click Host Path, pick the directory you want to import, click "Add", then click "Apply". PhotoStructure will find the new directory automatically if you leave the "Where else are your photos and videos?" section set to "Automatic", which is the default.&#xD;
-&#xD;
+  <Description>PhotoStructure is your new home for all your photos and videos.
+
+- Cross-platform libraries that you can move seamlessly across Docker, Windows, macOS, and Linux
+- Fast, fun mobile-friendly UI
+- Support for very large (250k+) libraries
+- Support for almost all RAW and video formats (thanks to LibRaw and FFmpeg)
+- Robust metadata support, including Google Takeouts, XMP sidecars, and sibling inference
+- Robust image and video deduplication
+
+Be sure to visit the forum for tips, support, and to vote on what features you want to see next!
+
+To import additional directories or volumes, click "Add another Path", enter a Container path (like "/photos"), click Host Path, pick the directory you want to import, click "Add", then click "Apply". PhotoStructure will find the new directory automatically if you leave the "Where else are your photos and videos?" section set to "Automatic", which is the default.
+
 Initial template by Spants (thanks!)</Description>
   <Networking>
     <Mode>bridge</Mode>
