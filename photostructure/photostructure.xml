@@ -64,7 +64,7 @@ Initial template by Spants (thanks!)</Description>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir>/mnt/cache/appdata/photostructure/tmp</HostDir>
+      <HostDir>/mnt/user/appdata/photostructure/tmp</HostDir>
       <ContainerDir>/ps/tmp</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
