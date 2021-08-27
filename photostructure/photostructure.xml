@@ -74,13 +74,13 @@ Initial template by Spants (thanks!)</Description>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir>/mnt/user/appdata/photostructure/logs</HostDir>
-      <ContainerDir>/ps/logs</ContainerDir>
+      <HostDir>/mnt/user/appdata/photostructure/config</HostDir>
+      <ContainerDir>/ps/config</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir>/mnt/user/appdata/photostructure/config</HostDir>
-      <ContainerDir>/ps/config</ContainerDir>
+      <HostDir>/mnt/user/appdata/photostructure/logs</HostDir>
+      <ContainerDir>/ps/logs</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
