@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>PhotoStructure</Name>
+  <Repository>photostructure/server:stable</Repository>
+  <Registry>https://hub.docker.com/r/photostructure/server/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forum.photostructure.com/</Support>
+  <Project>https://photostructure.com/</Project>
+  <Overview>PhotoStructure is your new home for all your photos and videos.&#xD;
+&#xD;
+- Cross-platform libraries that you can move seamlessly across Docker, Windows, macOS, and Linux&#xD;
+- Fast, fun mobile-friendly UI&#xD;
+- Support for very large (250k+) libraries&#xD;
+- Support for almost all RAW and video formats (thanks to LibRaw and FFmpeg)&#xD;
+- Robust metadata support, including Google Takeouts, XMP sidecars, and sibling inference&#xD;
+- Robust image and video deduplication&#xD;
+&#xD;
+Be sure to visit the forum for tips, support, and to vote on what features you want to see next!&#xD;
+&#xD;
+Initial template by Spants (thanks!)</Overview>
+  <Category>MediaApp:Photos</Category>
+  <WebUI>http://[IP]:[PS_HTTP_PORT:1787]</WebUI>
+  <TemplateURL/>
+  <Icon>https://photostructure.com/img/logo-circle-gradient-256.png</Icon>
+  <ExtraParams>--stop-timeout=120</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1630043365</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>PhotoStructure is your new home for all your photos and videos.&#xD;
+&#xD;
+- Cross-platform libraries that you can move seamlessly across Docker, Windows, macOS, and Linux&#xD;
+- Fast, fun mobile-friendly UI&#xD;
+- Support for very large (250k+) libraries&#xD;
+- Support for almost all RAW and video formats (thanks to LibRaw and FFmpeg)&#xD;
+- Robust metadata support, including Google Takeouts, XMP sidecars, and sibling inference&#xD;
+- Robust image and video deduplication&#xD;
+&#xD;
+Be sure to visit the forum for tips, support, and to vote on what features you want to see next!</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>1787</HostPort>
+        <ContainerPort>1787</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/Photos</HostDir>
+      <ContainerDir>/ps/library</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/cache/appdata/photostructure/tmp</HostDir>
+      <ContainerDir>/ps/tmp</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/photostructure/logs</HostDir>
+      <ContainerDir>/ps/logs</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/photostructure/config</HostDir>
+      <ContainerDir>/ps/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value/>
+      <Name>PUID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>PGID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>TZ</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>PS_LOG_LEVEL</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="Web UI" Target="1787" Default="" Mode="tcp" Description="Port to access the HTTP UI. Can be modified by setting the PS_HTTP_PORT environment variable." Type="Port" Display="always" Required="true" Mask="false">1787</Config>
+  <Config Name="Library" Target="/ps/library" Default="/mnt/user/Photos" Mode="rw" Description="This is where your PhotoStructure Library will be stored. It needs to have sufficient free space to hold preview images, and transcoded videos." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/Photos</Config>
+  <Config Name="User ID" Target="PUID" Default="" Mode="" Description="This is the userid that PhotoStructure will run under, instead of the default of root (userid 0).&#13;&#10;&#13;&#10;Files copied into your library will be owned by this userid." Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Group ID" Target="PGID" Default="" Mode="" Description="This is the groupid that PhotoStructure will run under. " Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="TZ" Target="TZ" Default="TZ" Mode="" Description="Setting the default timezone helps PhotoStructure infer captured-at time for assets that are missing timezone metadata.&#13;&#10;&#13;&#10;" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Logging level" Target="PS_LOG_LEVEL" Default="error" Mode="" Description="Valid values are debug, info, warn, and error. Default is error, which (should be) quiet." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Temp/Scratch disk" Target="/ps/tmp" Default="/mnt/cache/appdata/photostructure/tmp" Mode="rw" Description="This needs to be fast, local disk." Type="Path" Display="advanced" Required="true" Mask="false">/mnt/cache/appdata/photostructure/tmp</Config>
+  <Config Name="Logs" Target="/ps/logs" Default="/mnt/user/appdata/photostructure/logs" Mode="rw" Description="Logfiles will be written into this directory. Set environment variable " Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/photostructure/logs</Config>
+  <Config Name="System config" Target="/ps/config" Default="/mnt/user/appdata/photostructure/config" Mode="rw" Description="System configuration is written into this directory." Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/photostructure/config</Config>
+</Container>
