@@ -7,7 +7,7 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support>https://forum.photostructure.com/</Support>
+  <Support>https://forum.photostructure.com/t/debugging-on-unraid/1028</Support>
   <Project>https://photostructure.com/</Project>
   <Overview>[b]PhotoStructure is your new home for all your photos and videos.[/b]
 
@@ -48,6 +48,7 @@
   <DateInstalled>1630043365</DateInstalled>
   <DonateText/>
   <DonateLink/>
+  <Changes>Release notes are here: [a href="https://photostructure.com/changes"]https://photostructure.com/changes[/a]</Changes>
   <Description>[b]PhotoStructure is your new home for all your photos and videos.[/b]
 
 [ul]
@@ -133,12 +134,12 @@
   </Environment>
   <Labels/>
   <Config Name="Web UI" Target="1787" Default="" Mode="tcp" Description="Port to access the HTTP UI. Can be modified by setting the PS_HTTP_PORT environment variable." Type="Port" Display="always" Required="true" Mask="false">1787</Config>
-  <Config Name="Library" Target="/ps/library" Default="/mnt/user/Photos" Mode="rw" Description="This is where your PhotoStructure Library will be stored. It needs to have sufficient free space to hold preview images, and transcoded videos." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/Photos</Config>
-  <Config Name="User ID" Target="PUID" Default="" Mode="" Description="This is the userid that PhotoStructure will run under, instead of the default of root (userid 0).&#13;&#10;&#13;&#10;Files copied into your library will be owned by this userid." Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Group ID" Target="PGID" Default="" Mode="" Description="This is the groupid that PhotoStructure will run under. " Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="TZ" Target="TZ" Default="TZ" Mode="" Description="Setting the default timezone helps PhotoStructure infer captured-at time for assets that are missing timezone metadata.&#13;&#10;&#13;&#10;" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Library" Target="/ps/library" Default="/mnt/user/Photos" Mode="rw" Description="This is where your PhotoStructure Library will be stored. It needs to have sufficient free space to hold preview images, and transcoded videos." Type="Path" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="User ID" Target="PUID" Default="99" Mode="" Description="This is the userid that PhotoStructure will run under, instead of the default of root (userid 0).&#13;&#10;&#13;&#10;Files copied into your library will be owned by this userid." Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Group ID" Target="PGID" Default="100" Mode="" Description="This is the groupid that PhotoStructure will run under. " Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="TZ" Target="TZ" Default="Europe/London" Mode="" Description="Setting the default timezone helps PhotoStructure infer captured-at time for assets that are missing timezone metadata. Valid examples include Europe/London and America/Los_Angeles." Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <Config Name="Logging level" Target="PS_LOG_LEVEL" Default="error" Mode="" Description="Valid values are debug, info, warn, and error. Default is error, which (should be) quiet." Type="Variable" Display="advanced" Required="false" Mask="false"/>
-  <Config Name="Temp/Scratch disk" Target="/ps/tmp" Default="/mnt/cache/appdata/photostructure/tmp" Mode="rw" Description="This needs to be fast, local disk." Type="Path" Display="advanced" Required="true" Mask="false">/mnt/cache/appdata/photostructure/tmp</Config>
+  <Config Name="Temp/Scratch disk" Target="/ps/tmp" Default="/mnt/user/appdata/photostructure/tmp" Mode="rw" Description="This must be fast, local disk." Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/photostructure/tmp</Config>
   <Config Name="Logs" Target="/ps/logs" Default="/mnt/user/appdata/photostructure/logs" Mode="rw" Description="Logfiles will be written into this directory. Set environment variable " Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/photostructure/logs</Config>
   <Config Name="System config" Target="/ps/config" Default="/mnt/user/appdata/photostructure/config" Mode="rw" Description="System configuration is written into this directory." Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/photostructure/config</Config>
 </Container>
