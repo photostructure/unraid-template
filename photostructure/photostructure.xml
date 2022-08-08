@@ -5,15 +5,15 @@
   <Registry>https://hub.docker.com/r/photostructure/server/</Registry>
   <Branch>
     <Tag>stable</Tag>
-    <TagDescription>Stable releases</TagDescription>
+    <TagDescription>Stable builds are recommended</TagDescription>
   </Branch>
   <Branch>
     <Tag>beta</Tag>
-    <TagDescription>beta releases - should run but there may be bugs</TagDescription>
+    <TagDescription>Beta builds should run, but there may be bugs</TagDescription>
   </Branch>
   <Branch>
     <Tag>alpha</Tag>
-    <TagDescription>DANGER - latest code that may not work as expected</TagDescription>
+    <TagDescription>Alpha builds may have "show stopper" bugs (DANGER! Please have backups!)</TagDescription>
   </Branch>
   <Network>bridge</Network>
   <MyIP/>
@@ -21,12 +21,16 @@
   <Privileged>false</Privileged>
   <Support>https://forum.photostructure.com/t/debugging-on-unraid/1028</Support>
   <Project>https://photostructure.com/</Project>
+  <Screenshot>https://photostructure.com/img/2022/08/home.jpg</Screenshot>
+  <Screenshot>https://photostructure.com/img/2022/08/asset.jpg</Screenshot>
+  <Screenshot>https://photostructure.com/img/2022/08/welcome.jpg</Screenshot>
+  <Screenshot>https://photostructure.com/img/2022/08/settings.jpg</Screenshot>
   <Overview>PhotoStructure is your new home for all your photos and videos.&#xD;
 &#xD;
 &#xD;
  Cross-platform libraries that you can move seamlessly across Docker, Windows, macOS, and Linux &#xD;
  Fast, fun mobile-friendly UI &#xD;
- Support for very large (250k+) libraries &#xD;
+ Support for very large (250,000+ asset) libraries &#xD;
  Support for almost all RAW and video formats (thanks to LibRaw and FFmpeg) &#xD;
  Robust metadata support, including Google Takeouts, XMP sidecars, and sibling inference &#xD;
  Robust image and video deduplication &#xD;
